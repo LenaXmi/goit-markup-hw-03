@@ -266,6 +266,10 @@ margin-left: 50px;
   justify-content: space-between;
 }
 
+.features-item {
+  min-width: 270px;
+}
+
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
