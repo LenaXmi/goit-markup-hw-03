@@ -277,7 +277,7 @@ margin-left: 50px;
 }
 
 .features-item {
-  flex-basis: 270px;
+  flex-basis: calc((100%-90px) / 4);
 }
 
 .features-item:not(:last-child) {
