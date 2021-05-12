@@ -55,6 +55,10 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 /* Site header */
 
 .navigation-container {
@@ -168,7 +172,7 @@ margin-left: 50px;
 }
 
 .hero-section {
-  height: 600px;
+  min-height: 600px;
   background-color: var(--page-background-color);
   text-align: center;
 }
@@ -259,6 +263,12 @@ margin-left: 50px;
   margin: 15px;
 }
 
+.grid-item-border {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
 /* Studio features */
 
 .features {
@@ -267,7 +277,7 @@ margin-left: 50px;
 }
 
 .features-item {
-  min-width: 270px;
+  flex-basis: 270px;
 }
 
 .features-item:not(:last-child) {
@@ -376,7 +386,7 @@ margin-left: 50px;
 /* Portfolio product cards */
 
 .product {
-  margin-top: 20px;
+  padding-top: 20px;
 
   font-weight: 700;
   font-size: 18px;
