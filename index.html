@@ -22,32 +22,30 @@
     <!--Top line-->
 
     <header>
-      <div class="container">
-        <div class="navigation-container">
-          <a class="logo" href="./index.html"> <span>Web</span>Studio </a>
-          <nav>
-            <ul class="site-nav">
-              <li class="item">
-                <a class="current-link" href="./index.html">Студия</a>
-              </li>
-              <li class="item">
-                <a href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="item"><a href="">Контакты</a></li>
-            </ul>
-          </nav>
-
-          <!--Contacts-->
-
-          <ul class="site-contacts">
-            <li class="header-contacts">
-              <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+      <div class="container navigation">
+        <a class="logo" href="./index.html"> <span>Web</span>Studio </a>
+        <nav>
+          <ul class="site-nav">
+            <li class="item">
+              <a class="current-link" href="./index.html">Студия</a>
             </li>
-            <li class="header-contacts">
-              <a href="tel:+380961111111">+38096 111 11 11</a>
+            <li class="item">
+              <a href="./portfolio.html">Портфолио</a>
             </li>
+            <li class="item"><a href="">Контакты</a></li>
           </ul>
-        </div>
+        </nav>
+
+        <!--Contacts-->
+
+        <ul class="site-contacts">
+          <li class="header-contacts">
+            <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+          </li>
+          <li class="header-contacts">
+            <a href="tel:+380961111111">+38096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -68,7 +66,7 @@
 
       <!--Features-->
 
-      <section class="section">
+      <section class="features-section">
         <div class="container">
           <h2 class="visually-hidden">Наши особенности</h2>
           <ul class="features">
@@ -140,7 +138,7 @@
 
       <!--Our team-->
 
-      <section class="our-team-section">
+      <section class="section our-team">
         <div class="container">
           <h2 class="our-works-title">Наша команда</h2>
           <ul class="team">
@@ -150,8 +148,10 @@
                 alt="Игорь Демьяненко. Дизайн продукта."
                 width="270"
               />
-              <h3 class="employee">Игорь Демьяненко</h3>
-              <p class="position">Product Designer</p>
+              <div class="workman">
+                <h3 class="employee">Игорь Демьяненко</h3>
+                <p class="position">Product Designer</p>
+              </div>
             </li>
             <li class="member">
               <img
@@ -159,8 +159,10 @@
                 alt="Ольга Репина. Разработка."
                 width="270"
               />
-              <h3 class="employee">Ольга Репина</h3>
-              <p class="position">Frontend Developer</p>
+              <div class="workman">
+                <h3 class="employee">Ольга Репина</h3>
+                <p class="position">Frontend Developer</p>
+              </div>
             </li>
             <li class="member">
               <img
@@ -168,8 +170,10 @@
                 alt="Николай Тарасов. Маркетинг."
                 width="270"
               />
-              <h3 class="employee">Николай Тарасов</h3>
-              <p class="position">Marketing</p>
+              <div class="workman">
+                <h3 class="employee">Николай Тарасов</h3>
+                <p class="position">Marketing</p>
+              </div>
             </li>
             <li class="member">
               <img
@@ -177,8 +181,10 @@
                 alt="Михаил Ермаков. Графический дизайн."
                 width="270"
               />
-              <h3 class="employee">Михаил Ермаков</h3>
-              <p class="position">UI Designer</p>
+              <div class="workman">
+                <h3 class="employee">Михаил Ермаков</h3>
+                <p class="position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -189,7 +195,7 @@
 
     <footer>
       <div class="container">
-        <a class="logo" href="./index.html">
+        <a class="footer-logo" href="./index.html">
           <span>Web</span><span class="second-half">Studio</span>
         </a>
         <address>

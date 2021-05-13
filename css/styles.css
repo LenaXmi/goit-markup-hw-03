@@ -46,6 +46,7 @@ ul {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 h1,
@@ -61,7 +62,7 @@ img {
 
 /* Site header */
 
-.navigation-container {
+.navigation {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -172,14 +173,13 @@ margin-left: 50px;
 }
 
 .hero-section {
-  min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--page-background-color);
   text-align: center;
 }
 
 .hero-title {
-  padding-top: 200px;
-
   color: var(--main-background-color);
 
   font-weight: 900;
@@ -236,7 +236,7 @@ margin-left: 50px;
 }
 .filters button {
   padding: 6px 22px;
-  margin-right: 8px;
+
   color: var(--main-text-color);
   background-color: #f5f4fa;
 
@@ -249,6 +249,10 @@ margin-left: 50px;
 
   border-radius: 4px;
   border-color: transparent;
+}
+
+.btn:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Portfolio product grid */
@@ -270,6 +274,10 @@ margin-left: 50px;
 }
 
 /* Studio features */
+
+.features-section {
+  padding-top: 94px;
+}
 
 .features {
   display: flex;
@@ -335,9 +343,8 @@ margin-left: 50px;
 
 /* Studio team */
 
-.our-team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.our-team {
+  background-color: #f5f4fa;
 }
 
 .team {
@@ -358,9 +365,12 @@ margin-left: 50px;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.employee {
-  margin-top: 30px;
 
+.workman {
+  padding: 30px 32px;
+}
+
+.employee {
   color: var(--main-text-color);
 
   font-weight: 500;
@@ -372,7 +382,6 @@ margin-left: 50px;
 
 .position {
   margin-top: 10px;
-  padding-bottom: 30px;
 
   color: var(--secondary-text-color);
 
@@ -408,13 +417,22 @@ margin-left: 50px;
 
 footer {
   background-color: var(--page-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-footer a.logo {
-  padding-top: 60px;
-  padding-bottom: 0;
-  margin-right: 0;
-  margin-bottom: 13px;
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--main-text-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 address {
@@ -423,7 +441,10 @@ address {
 
 .contacts-list {
   display: inline-block;
-  padding-bottom: 60px;
+}
+
+.contacts-list li:not(:first-child) {
+  margin-top: 9px;
 }
 
 .main-address {
@@ -438,14 +459,11 @@ address {
 
 .main-address:hover,
 :focus {
-  padding-bottom: 9px;
-
   color: var(--main-accent-color);
 }
 
 .footer-contacts {
   display: inline-block;
-  padding-top: 9px;
 
   color: rgba(255, 255, 255, 0.6);
 
