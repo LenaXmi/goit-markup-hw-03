@@ -144,13 +144,10 @@ margin-left: 50px;
   margin-right: 50px;
 }
 
-.header-contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .header-contacts a {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondary-text-color);
 
@@ -222,7 +219,7 @@ margin-left: 50px;
 
 .filters {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: center;
 }
